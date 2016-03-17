@@ -1,0 +1,57 @@
+web0:
+    image: eboraas/laravel
+    restart: always
+    ports:
+        - "8001:80" # web
+    links:
+        - mysql1
+
+web1:
+    image: shincoder/homestead
+    restart: always
+    ports:
+        - "8002:80" # web
+    links:
+        - mysql1
+
+web2:
+    image: shincoder/homestead
+    restart: always
+    ports:
+        - "8003:80" # web
+    links:
+        - mysql1
+
+web3:
+    image: shincoder/homestead
+    restart: always
+    ports:
+        - "8004:80" # web
+    links:
+        - mysql2
+
+web4:
+    image: occitech/cakephp:5-fpm
+    restart: always
+    ports:
+        - "8005:80" # web
+    links:
+        - mysql2
+
+mysql1:
+    image: tutum/mysql
+    restart: always
+    ports:
+        - "33061:3306"
+    environment:
+        MYSQL_USER: root
+        MYSQL_PASS: secret
+
+mysql2:
+    image: tutum/mysql
+    restart: always
+    ports:
+        - "33062:3306"
+    environment:
+        MYSQL_USER: root
+        MYSQL_PASS: secret

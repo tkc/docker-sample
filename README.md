@@ -3,7 +3,6 @@
 
 
 
-
 # docker
 
 
@@ -20,12 +19,10 @@
 ## install Docker for Mac OS X
 https://docs.docker.com/
 
-
 laravelの環境をつくりたい。
 mysqlのroot/passを決めたい。
 
 docker pull eboraas/laravel
-
 
 # docker HUB
 https://hub.docker.com/
@@ -204,7 +201,6 @@ Dockerfileが用意できたら、新しいイメージをビルドします。
 docker build -t php:custom ./
 
 
-
 参考
 Dockerコンテナ内にmysqlサーバを立てる
 http://qiita.com/gologo13/items/1bdba6085ec79153bf1a
@@ -215,14 +211,22 @@ http://j-caw.co.jp/blog/?p=1583
 [docker] Docker ComposeでMySQLを使う
 http://modegramming.blogspot.jp/2015/05/docker-docker-composemysql.html
 
+
 Ansible Docker Connection Pluginを使う
 http://tdoc.info/blog/2015/12/03/docker_connection_plugin.html
+
 
 Docker Hubのオフィシャルイメージを使ったLAMP環境(Apache+PHP+MySQL)構築
 http://qiita.com/naga3/items/be1a062075db9339762d
 
+
 Dockerの公式MySQLイメージの使い方を徹底的に解説するよ
 http://dqn.sakusakutto.jp/2015/10/docker_mysqld_tutorial.html
 
+
 AnsibleでRPMのMySQL5.7のインストール・初期設定を自動化してみた
 http://dqn.sakusakutto.jp/2016/01/ansible-mysql57-setup.html
+
+
+Quickstart: Docker Compose and WordPress
+https://docs.docker.com/compose/wordpress/
