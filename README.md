@@ -2,7 +2,6 @@
 # TODO
 
 
-
 # docker
 
 
@@ -24,6 +23,7 @@ https://docs.docker.com/
 https://hub.docker.com/
 
 ## docker Laravel Sample
+
 
 ```
 # https://hub.docker.com/r/eboraas/laravel/
@@ -123,6 +123,17 @@ docker run -p 80:80 -d eboraas/laravel --link  mysqld:mysql -it --rm mysql bash
 docker-compose up -d
 ```
 
+build
+```
+docker-compose build
+```
+
+rm
+```
+docker-compose rm
+
+```
+
 remove images
 ```
 docker rmi [IMAGE ID]
@@ -215,8 +226,13 @@ mysql -h ALIAS_MYSQL -uroot -p
 
 docker run -p 80:80 -v  --link mysql:mysql --name php -d php:custom
 
-Dockerfileが用意できたら、新しいイメージをビルドします。
-docker build -t php:custom ./
+
+Private HUB
+```
+docker commit default <user_name>/name
+docker login
+docker push <user_name>/name
+```
 
 
 参考
@@ -256,3 +272,4 @@ http://qiita.com/takara@github/items/2349fff473474d7fcf47
 
 dockerでmysqlを使う
 http://qiita.com/astrsk_hori/items/e3d6c237d68be1a6f548
+
