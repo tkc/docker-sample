@@ -16,21 +16,21 @@
               \____\_______/
 
 
+
 ## install Docker for Mac OS X
 https://docs.docker.com/
-
-laravelの環境をつくりたい。
-mysqlのroot/passを決めたい。
-
-docker pull eboraas/laravel
 
 # docker HUB
 https://hub.docker.com/
 
-## docker laravel sample
+## docker Laravel Sample
 
 ```
 # https://hub.docker.com/r/eboraas/laravel/
+```
+
+```
+# docker pull eboraas/laravel
 ```
 
 ```
@@ -42,12 +42,12 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 eboraas/laravel     latest              16aaebcee7eb        13 months ago       404.5 MB
 ```
 
-起動
+run sample
 ```
 # docker run -p 80:80 -d eboraas/laravel
 # docker run -p 8091:80 -v /Users/tkc/Desktop/test/:/var/www/laravel -d eboraas/laravel
-# docker run -p 8092:80 -v /Users/tkc/Desktop/test/:/var/www/laravel -d eboraas/laravel
 ```
+
 run reference
 https://docs.docker.com/engine/reference/commandline/run/
 
@@ -66,9 +66,23 @@ CONTAINER ID        IMAGE                    COMMAND             CREATED        
 e7a782b7a588        eboraas/laravel:latest   "/bin/bash"         3 minutes ago       Exited (0) 3 minutes ago                       laravel_test
 ```
 
-コンテナの起動
+docker Life Cycle
 ```
-# docker start e7a782b7a588
+// Run
+docker run -itd -p 8001:80 -p 2222:22 --name web01 eboraas/laravel:latest
+
+// Stop
+docker stop web01
+
+// Start
+docker start web01
+
+// Restart
+docker restart web01
+
+// Remove
+docker rm web01
+
 ```
 
 IPデフォルト確認
@@ -194,6 +208,10 @@ image install
 docker run -d php:5.6-apache
 ```
 
+今、立ち上げたコンテナからmysqlコンテナに繋ぐには以下。
+````
+mysql -h ALIAS_MYSQL -uroot -p
+````
 
 docker run -p 80:80 -v  --link mysql:mysql --name php -d php:custom
 
@@ -202,6 +220,7 @@ docker build -t php:custom ./
 
 
 参考
+
 Dockerコンテナ内にmysqlサーバを立てる
 http://qiita.com/gologo13/items/1bdba6085ec79153bf1a
 
@@ -211,22 +230,29 @@ http://j-caw.co.jp/blog/?p=1583
 [docker] Docker ComposeでMySQLを使う
 http://modegramming.blogspot.jp/2015/05/docker-docker-composemysql.html
 
-
 Ansible Docker Connection Pluginを使う
 http://tdoc.info/blog/2015/12/03/docker_connection_plugin.html
-
 
 Docker Hubのオフィシャルイメージを使ったLAMP環境(Apache+PHP+MySQL)構築
 http://qiita.com/naga3/items/be1a062075db9339762d
 
-
 Dockerの公式MySQLイメージの使い方を徹底的に解説するよ
 http://dqn.sakusakutto.jp/2015/10/docker_mysqld_tutorial.html
-
 
 AnsibleでRPMのMySQL5.7のインストール・初期設定を自動化してみた
 http://dqn.sakusakutto.jp/2016/01/ansible-mysql57-setup.html
 
-
 Quickstart: Docker Compose and WordPress
 https://docs.docker.com/compose/wordpress/
+
+Networking in Compose
+https://docs.docker.com/compose/networking/
+
+Laravel5をDockerで動かす
+http://blog.yucchiy.com/2015/01/16/dockerized-laravel5/
+
+docker固定ＩＰ
+http://qiita.com/takara@github/items/2349fff473474d7fcf47
+
+dockerでmysqlを使う
+http://qiita.com/astrsk_hori/items/e3d6c237d68be1a6f548
