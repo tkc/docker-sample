@@ -2,17 +2,40 @@ docker sample
 
 <?php
 
-phpinfo();
+$m = new MongoClient("mongodb://172.17.0.6:27017");
+$db = $m->comedy;
+$collection = $db->cartoons;
+$obj = array("title" => "Calvin and Hobbes", "author" => "Bill Watterson");
+$collection->insert($obj);
+$obj = array("title" => "XKCD", "online" => true);
+$collection->insert($obj);
+$cursor = $collection->find();
+//foreach ($cursor as $obj) {
+//    echo $obj["title"] . "\n";
+//}
 
-echo getenv('MYSQL_ENV_MYSQL_USER');
 
-$link = mysql_connect(env('MYSQL_PORT_3306_TCP'), env('MYSQL_ENV_MYSQL_USER'), env('MYSQL_ENV_MYSQL_PASSWORD'));
+$url = "172.17.0.4";
+$url = "172.17.0.4:3306";
+$user = "root";
+$pass = "secret";
+$db = "homestead";
 
 
-if (!$link) {
-    die('接続失敗です。' . mysql_error());
-}
+$link = mysql_connect($url, $user, $pass) or die("dinny connect");
+$sdb = mysql_select_db($db, $link) or die("db dinny");
+mysql_close($link) or die("dinny end link");
 
+
+$url = "172.17.0.2:3306";
+$user = "root";
+$pass = "secret";
+$db = "homestead";
+
+
+$link = mysql_connect($url, $user, $pass) or die("dinny connect");
+$sdb = mysql_select_db($db, $link) or die("db dinny");
+mysql_close($link) or die("dinny end link");
 
 /*
 'mysql' => [

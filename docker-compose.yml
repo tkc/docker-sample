@@ -2,7 +2,7 @@
 # PHP + NGINX Container #----------------------------------
 laravel5:
 #  image: laradock/phpnginx:latest
-  image: tkcdocker/laravel5
+  image: tkcdocker/laravel-mongo
   container_name: laravel5
   ports:
     - "80:80"
@@ -14,6 +14,7 @@ laravel5:
     - mysql
     - mysqltesting
     - redis
+    - mongo
   privileged: true
 
 # MySQL Container #----------------------------------------
@@ -52,6 +53,21 @@ mysqltesting:
 #    MYSQL_PASSWORD: secret
   privileged: true
 
+# MySQL Container #----------------------------------------
+mongo:
+  image: mongo:latest
+  container_name: mongo
+  ports:
+    - "27017:27017"
+  volumes:
+     - /logs/mongo:/data/db
+#  environment:
+#    MYSQL_ALLOW_EMPTY_PASSWORD: N
+#    MYSQL_ROOT_PASSWORD: secret
+#    MYSQL_DATABASE: homestead
+#    MYSQL_USER: homestead
+#    MYSQL_PASSWORD: secret
+  privileged: true
 
 # Redis Container #----------------------------------------
 redis:
