@@ -1,15 +1,89 @@
-version: '2'
-services:
-  web:
-    build: .
-    command: php -S 0.0.0.0:8000 -t /code/
-    ports:
-      - "8000:8000"
-    depends_on:
-      - db
-    volumes:
-      - .:/code
-  db:
-    image: orchardup/mysql
-    environment:
-      MYSQL_DATABASE: wordpress
+
+# PHP + NGINX Container #----------------------------------
+laravel5:
+#  image: laradock/phpnginx:latest
+  image: tkcdocker/laravel5
+  container_name: laravel5
+  ports:
+    - "80:80"
+  volumes:
+    - ./settings/nginx:/etc/nginx/sites-available
+    - ./Code/:/var/www
+    - ./logs/nginx:/var/log/nginx
+  links:
+    - mysql
+    - mysqltesting
+    - redis
+  privileged: true
+
+# MySQL Container #----------------------------------------
+mysql:
+  image: mysql:latest
+  container_name: mysql
+  ports:
+    - "3306:3306"
+#  volumes_from:
+#    - data
+  volumes:
+    - ./logs/mysql:/var/log/mysql
+  environment:
+    MYSQL_ALLOW_EMPTY_PASSWORD: N
+    MYSQL_ROOT_PASSWORD: secret
+    MYSQL_DATABASE: homestead
+#    MYSQL_USER: homestead
+#    MYSQL_PASSWORD: secret
+  privileged: true
+
+# MySQL Container #----------------------------------------
+mysqltesting:
+  image: laradock/mysql:latest
+  container_name: mysqltesting
+  ports:
+    - "3307:3306"
+#  volumes_from:
+#    - data
+  volumes:
+    - ./logs/mysql-testing:/var/log/mysql
+  environment:
+    MYSQL_ALLOW_EMPTY_PASSWORD: N
+    MYSQL_ROOT_PASSWORD: secret
+    MYSQL_DATABASE: homestead
+#    MYSQL_USER: homestead
+#    MYSQL_PASSWORD: secret
+  privileged: true
+
+
+# Redis Container #----------------------------------------
+redis:
+  image: laradock/redis:latest
+  container_name: redis
+  ports:
+    - "6379:6379"
+#  volumes_from:
+#    - data
+  volumes:
+    - ./logs/redis:/var/log/redis
+  restart: always
+  privileged: true
+
+
+# Data Volume Container #----------------------------------
+data:
+  image: laradock/data:latest
+  container_name: data
+  volumes:
+    - /var/lib/mysql
+    - /var/lib/redis
+
+
+# Beanstalkd Container #-----------------------------------
+# beanstalkd:
+#   image: laradock/beanstalkd:latest
+#   container_name: beanstalkd
+#   ports:
+#     - "11300:11300"
+#   privileged: true
+
+#----------------------------------------------------------
+
+

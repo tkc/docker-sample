@@ -19,11 +19,11 @@
 ## install Docker for Mac OS X
 https://docs.docker.com/
 
+
 # docker HUB
 https://hub.docker.com/
 
 ## docker Laravel Sample
-
 
 ```
 # https://hub.docker.com/r/eboraas/laravel/
@@ -234,6 +234,49 @@ docker login
 docker push <user_name>/name
 ```
 
+ Net Work
+
+
+docker-compose.yml
+
+```
+php-nginx:
+  image: laradock/phpnginx:latest
+  container_name: php-nginx
+  ports:
+    - "80:80"
+  volumes:
+    - ./settings/nginx:/etc/nginx/sites-available
+    - ./laravel/:/var/www
+    - ./logs/nginx:/var/log/nginx
+  links:
+    - mysql
+    - mysqltesting
+    - redis
+  privileged: true
+
+```
+
+command
+```
+env
+```
+
+php
+
+```
+echo env('MYSQL_PORT_3306_TCP_ADDR')
+```
+
+bash
+```
+mysql -u homestead -p -h $MYSQL_PORT_3306_TCP_ADDR --port 3306
+
+```
+
+
+docker-compose up -d
+docker-compose rm
 
 参考
 
@@ -273,3 +316,9 @@ http://qiita.com/takara@github/items/2349fff473474d7fcf47
 dockerでmysqlを使う
 http://qiita.com/astrsk_hori/items/e3d6c237d68be1a6f548
 
+docker-composeでデータベースコンテナを立てるときのTips
+データベースの永続化
+http://blog.muuny-blue.info/9f067d8d6df2d4b8c64fb4c084d6c208.html
+
+docker上のmysqlを使うにあたりよくあるパターン
+https://blog.kazu69.net/2016/01/13/put-togeth

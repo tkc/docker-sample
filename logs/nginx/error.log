@@ -1,0 +1,225 @@
+2016/03/19 11:40:39 [error] 28#0: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.101"
+2016/03/19 11:40:40 [error] 28#0: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.101"
+2016/03/19 11:40:40 [error] 28#0: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.101"
+2016/03/19 11:40:40 [error] 28#0: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.101"
+2016/03/19 11:43:14 [error] 28#0: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.101"
+2016/03/19 11:43:14 [error] 28#0: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.101"
+2016/03/19 11:43:19 [error] 28#0: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.101"
+2016/03/19 11:43:20 [error] 28#0: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.101"
+2016/03/19 11:43:20 [error] 28#0: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.101"
+2016/03/19 11:43:20 [error] 28#0: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.101"
+2016/03/19 11:51:14 [error] 28#0: *13 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.101"
+2016/03/19 11:52:25 [error] 28#0: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(56): Illuminate\Log\Writer->error(Object(UnexpectedValueException))
+#6 /var/www/app/Exceptions/Handler...
+PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#5 /var/www/vendor/laravel/framework/src/
+2016/03/19 11:52:26 [error] 28#0: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(56): Illuminate\Log\Writer->error(Object(UnexpectedValueException))
+#6 /var/www/app/Exceptions/Handler...
+PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#5 /var/www/vendor/laravel/framework/src/
+2016/03/19 11:52:26 [error] 28#0: *21 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(56): Illuminate\Log\Writer->error(Object(UnexpectedValueException))
+#6 /var/www/app/Exceptions/Handler...
+PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#5 /var/www/vendor/laravel/framework/src/
+2016/03/19 11:53:49 [error] 28#0: *23 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(56): Illuminate\Log\Writer->error(Object(UnexpectedValueException))
+#6 /var/www/app/Exceptions/Handler...
+PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#5 /var/www/vendor/laravel/framework/src/
+2016/03/19 11:53:49 [error] 28#0: *23 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(56): Illuminate\Log\Writer->error(Object(UnexpectedValueException))
+#6 /var/www/app/Exceptions/Handler...
+PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#5 /var/www/vendor/laravel/framework/src/
+2016/03/19 11:53:50 [error] 28#0: *27 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(56): Illuminate\Log\Writer->error(Object(UnexpectedValueException))
+#6 /var/www/app/Exceptions/Handler...
+PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#5 /var/www/vendor/laravel/framework/src/
+2016/03/19 11:53:55 [error] 28#0: *27 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(56): Illuminate\Log\Writer->error(Object(UnexpectedValueException))
+#6 /var/www/app/Exceptions/Handler...
+PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#5 /var/www/vendor/laravel/framework/src/
+2016/03/19 11:53:56 [error] 28#0: *27 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(56): Illuminate\Log\Writer->error(Object(UnexpectedValueException))
+#6 /var/www/app/Exceptions/Handler...
+PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#5 /var/www/vendor/laravel/framework/src/
+2016/03/19 11:53:56 [error] 28#0: *27 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(56): Illuminate\Log\Writer->error(Object(UnexpectedValueException))
+#6 /var/www/app/Exceptions/Handler...
+PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /var/www/bootstrap/cache/compiled.php:13644
+Stack trace:
+#0 /var/www/bootstrap/cache/compiled.php(13582): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/bootstrap/cache/compiled.php(13343): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/bootstrap/cache/compiled.php(13441): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/bootstrap/cache/compiled.php(13136): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/bootstrap/cache/compiled.php(13107): Illuminate\Log\Writer->writeLog('error', Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#5 /var/www/vendor/laravel/framework/src/
+2016/03/20 16:12:33 [error] 29#0: *5 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "192.168.99.100"
+2016/03/20 16:12:44 [error] 29#0: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 6" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:13:02 [error] 29#0: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 6" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:13:04 [error] 29#0: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 6" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:13:04 [error] 29#0: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 6" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:13:04 [error] 29#0: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 6" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:13:20 [error] 29#0: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 6" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:13:58 [error] 29#0: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 7" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:14:09 [error] 29#0: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 9" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:14:25 [error] 29#0: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 12" while reading upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:16:09 [error] 29#0: *23 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 14" while reading upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:16:14 [error] 29#0: *23 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 14" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:16:55 [error] 29#0: *23 FastCGI sent in stderr: "PHP message: PHP Notice:  Use of undefined constant phpenv - assumed 'phpenv' in /var/www/public/index.php on line 9
+PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 15" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:17:01 [error] 29#0: *23 FastCGI sent in stderr: "PHP message: PHP Notice:  Use of undefined constant phpenv - assumed 'phpenv' in /var/www/public/index.php on line 9
+PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 15" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:17:15 [error] 29#0: *23 FastCGI sent in stderr: "PHP message: PHP Notice:  Use of undefined constant phpenv - assumed 'phpenv' in /var/www/public/index.php on line 9
+PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 12" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:17:20 [error] 29#0: *23 FastCGI sent in stderr: "PHP message: PHP Notice:  Use of undefined constant phpenv - assumed 'phpenv' in /var/www/public/index.php on line 9
+PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 12" while reading upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:17:32 [error] 29#0: *23 FastCGI sent in stderr: "PHP message: PHP Notice:  Use of undefined constant phpenv - assumed 'phpenv' in /var/www/public/index.php on line 9
+PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 12" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:17:37 [error] 29#0: *23 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 12" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:19:29 [error] 29#0: *36 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 12" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:19:30 [error] 29#0: *36 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 12" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:19:30 [error] 29#0: *36 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 12" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:19:30 [error] 29#0: *37 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 12" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:20:01 [error] 29#0: *37 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 12" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:20:01 [error] 29#0: *37 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 12" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:20:22 [error] 29#0: *37 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 12" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:20:32 [error] 29#0: *37 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 15" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:23:29 [error] 29#0: *48 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 19" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:24:06 [error] 29#0: *48 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 21" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:24:11 [error] 29#0: *48 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 21" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:24:16 [error] 29#0: *48 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 21" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:25:32 [error] 29#0: *55 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 22" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:25:38 [error] 29#0: *55 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 22" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:25:45 [error] 29#0: *55 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 22" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:26:50 [error] 29#0: *61 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 22" while reading upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:27:17 [error] 29#0: *61 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 22" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:27:38 [error] 29#0: *61 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 11" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:27:38 [error] 29#0: *61 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 11" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:27:38 [error] 29#0: *61 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 11" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:27:38 [error] 29#0: *61 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 11" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:27:39 [error] 29#0: *66 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 11" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:27:39 [error] 29#0: *72 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 11" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:27:39 [error] 29#0: *72 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 11" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:27:39 [error] 29#0: *74 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 11" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:28:14 [error] 29#0: *74 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 11" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/20 16:28:37 [error] 29#0: *74 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function env() in /var/www/public/index.php on line 12" while reading upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
