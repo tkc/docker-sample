@@ -1,18 +1,18 @@
 
 # Cheat Sheet
 
-
 run sample
 ```
-# docker run -p 80:80 -d eboraas/laravel
-# docker run -p 8091:80 -v /Users/tkc/Desktop/test/:/var/www/laravel -d eboraas/laravel
+docker run -p 80:80 -d eboraas/laravel
+docker run -p 8091:80 -v /Users/tkc/Desktop/test/:/var/www/laravel -d eboraas/laravel
 ```
+
 https://docs.docker.com/engine/reference/commandline/run/
 
 
 起動中のコンテナの確認
 ````
-# docker ps -a
+docker ps -a
 ````
 https://docs.docker.com/engine/reference/commandline/ps/
 
@@ -49,18 +49,17 @@ docker-machine ip default
 
 server login
 ```
-# docker exec -ti e7a782b7a588 bash
+docker exec -ti e7a782b7a588 bash
 ```
 
 コンテナの停止
 ```
-# docker stop  e7a782b7a588
+docker stop  e7a782b7a588
 ```
 
 コンテナ削除
 ````
-# docker rm e7a782b7a588
-
+docker rm e7a782b7a588
 ````
 
 イメージの削除
@@ -161,7 +160,6 @@ docker ps -q | xargs docker stop | xargs docker rm
 docker rm -f $(docker ps -a -q)
 ```
 
-
 exec
 ```
 docker exec -ti [name] bash
@@ -172,15 +170,7 @@ share Directory
 docker run -p 80:80 -v /docker/www:/var/www/html --name php -d php:5.6-apache
 ```
 
-今、立ち上げたコンテナからmysqlコンテナに繋ぐには以下。
-````
-mysql -h ALIAS_MYSQL -uroot -p
-````
-
-docker run -p 80:80 -v  --link mysql:mysql --name php -d php:custom
-
-
-Private HUB
+Private HUB push
 ```
 docker commit default <user_name>/name
 docker login
@@ -201,4 +191,3 @@ bash
 ```
 mysql -u homestead -p -h $MYSQL_PORT_3306_TCP_ADDR --port 3306
 ```
-itect.hatenablog.com/entry/2016/03/16/225925

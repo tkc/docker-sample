@@ -129,6 +129,11 @@ env
 echo env('MYSQL_PORT_3306_TCP_ADDR')
 ```
 
+```
+docker exec -ti laravel5 bash
+mysql -u root -p -h $MYSQLTESTING_PORT_3306_TCP_ADDR --port 3306
+```
+
 ## Docker HUB
 https://hub.docker.com/
 
