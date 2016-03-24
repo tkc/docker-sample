@@ -2,40 +2,18 @@
 # Cheat Sheet
 
 
-## docker Laravel Sample
-
-```
-https://hub.docker.com/r/eboraas/laravel/
-```
-
-```
-docker pull eboraas/laravel
-```
-
-```
-docker images
-```
-
-```
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-eboraas/laravel     latest              16aaebcee7eb        13 months ago       404.5 MB
-```
-
 run sample
 ```
 # docker run -p 80:80 -d eboraas/laravel
 # docker run -p 8091:80 -v /Users/tkc/Desktop/test/:/var/www/laravel -d eboraas/laravel
 ```
-run reference
 https://docs.docker.com/engine/reference/commandline/run/
 
 
 起動中のコンテナの確認
-
 ````
 # docker ps -a
 ````
-ps reference
 https://docs.docker.com/engine/reference/commandline/ps/
 
 
@@ -223,57 +201,4 @@ bash
 ```
 mysql -u homestead -p -h $MYSQL_PORT_3306_TCP_ADDR --port 3306
 ```
-
-参考
-
-Dockerコンテナ内にmysqlサーバを立てる
-http://qiita.com/gologo13/items/1bdba6085ec79153bf1a
-
-Dockerでmysqlサーバコンテナへ別のコンテナからアクセスする
-http://j-caw.co.jp/blog/?p=1583
-
-[docker] Docker ComposeでMySQLを使う
-http://modegramming.blogspot.jp/2015/05/docker-docker-composemysql.html
-
-Ansible Docker Connection Pluginを使う
-http://tdoc.info/blog/2015/12/03/docker_connection_plugin.html
-
-Docker Hubのオフィシャルイメージを使ったLAMP環境(Apache+PHP+MySQL)構築
-http://qiita.com/naga3/items/be1a062075db9339762d
-
-Dockerの公式MySQLイメージの使い方を徹底的に解説するよ
-http://dqn.sakusakutto.jp/2015/10/docker_mysqld_tutorial.html
-
-AnsibleでRPMのMySQL5.7のインストール・初期設定を自動化してみた
-http://dqn.sakusakutto.jp/2016/01/ansible-mysql57-setup.html
-
-Quickstart: Docker Compose and WordPress
-https://docs.docker.com/compose/wordpress/
-
-Networking in Compose
-https://docs.docker.com/compose/networking/
-
-Laravel5をDockerで動かす
-http://blog.yucchiy.com/2015/01/16/dockerized-laravel5/
-
-docker固定ＩＰ
-http://qiita.com/takara@github/items/2349fff473474d7fcf47
-
-dockerでmysqlを使う
-http://qiita.com/astrsk_hori/items/e3d6c237d68be1a6f548
-
-docker-composeでデータベースコンテナを立てるときのTips
-データベースの永続化
-http://blog.muuny-blue.info/9f067d8d6df2d4b8c64fb4c084d6c208.html
-
-docker上のmysqlを使うにあたりよくあるパターン
-https://blog.kazu69.net/2016/01/13/put-togeth
-
-Docker でデータのポータビリティをあげ永続化しよう
-http://qiita.com/mopemope/items/b05ff7f603a5ad74bf55
-
-Dockerの再起動オプション
-http://deeeet.com/writing/2014/09/17/docker-1-2-restart/
-
-docker の実行環境を選択する
-http://simplearchitect.hatenablog.com/entry/2016/03/16/225925
+itect.hatenablog.com/entry/2016/03/16/225925

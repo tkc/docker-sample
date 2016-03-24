@@ -27,8 +27,9 @@ Docker for Mac OS X
 https://docs.docker.com/
 
 
-## コンテナとはなにか？
+## コンテナとは？
 
+```
 コンテナとはハイレベルから見ると軽量VMにみえます。
 プロセスが隔離されているしネットワークも独自に振られていて、
 リソースも分離されているしrootとして実行する。
@@ -36,11 +37,10 @@ https://docs.docker.com/
 chrootに近い、
 chrootとは、UNIXオペレーティングシステムにおいて、
 現在のプロセスとその子プロセス群に対してルートディレクトリを変更する操作である。
-
 例えば1GBのOSを10個動かそうとすれば、
 仮想マシンではディスクスペースはOSが10個分で10GBを使いますが、
 Dockerなら親のOSイメージを共有する為に1つ分の1GBで済む。
-
+```
 
 ## Dockerfile sample
 
@@ -50,6 +50,7 @@ docker build -t docker-file .
 docker images
 ````
 
+## docker pull sample
 ````
 docker pull reinblau/lamp
 docker images
@@ -84,7 +85,6 @@ docker ps -a  //all
 ## exec
 ```
 docker exec -ti <id / name > bash
-
 ```
 
 ## stop
@@ -93,7 +93,7 @@ docker syop <id>
 ```
 
 
-## commit & Push
+## commit & push
 ログインが必要
 ```
 docker commit <name  or id > <user-name/new-image-name>
@@ -106,22 +106,17 @@ docker pull <image namge>
 
 ## Docker Compose
 
-up
 ```
+# up
 docker-compose up -d
-```
-
-rm
-```
+# rm
 docker-compose rm
-
 ```
 
 ## env
 ```
 env
 ```
-
 
 ## ネットワーク例 php
 ```

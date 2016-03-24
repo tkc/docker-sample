@@ -259,3 +259,98 @@ Stack trace:
 2016/03/20 17:27:19 [error] 29#0: *53 FastCGI sent in stderr: "PHP message: PHP Warning:  mysql_connect(): Access denied for user 'root'@'172.17.0.5' (using password: YES) in /var/www/public/index.php on line 24" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
 2016/03/20 17:27:51 [error] 29#0: *53 FastCGI sent in stderr: "PHP message: PHP Warning:  mysql_connect(): Access denied for user 'root'@'172.17.0.5' (using password: YES) in /var/www/public/index.php on line 25" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
 2016/03/20 17:29:19 [error] 29#0: *59 FastCGI sent in stderr: "PHP message: PHP Warning:  mysql_connect(): Access denied for user 'root'@'172.17.0.5' (using password: YES) in /var/www/public/index.php on line 25" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:03:26 [error] 28#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: 172.17.0.6:27017: Connection refused' in /var/www/public/index.php:5
+Stack trace:
+#0 /var/www/public/index.php(5): MongoClient->__construct('mongodb://172.1...')
+#1 {main}
+  thrown in /var/www/public/index.php on line 5" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:03:28 [error] 28#0: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: 172.17.0.6:27017: Previous connection attempts failed, server blacklisted' in /var/www/public/index.php:5
+Stack trace:
+#0 /var/www/public/index.php(5): MongoClient->__construct('mongodb://172.1...')
+#1 {main}
+  thrown in /var/www/public/index.php on line 5" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:03:38 [error] 28#0: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: 172.17.0.6:27017: Connection refused' in /var/www/public/index.php:5
+Stack trace:
+#0 /var/www/public/index.php(5): MongoClient->__construct('mongodb://172.1...')
+#1 {main}
+  thrown in /var/www/public/index.php on line 5" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:03:38 [error] 28#0: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: 172.17.0.6:27017: Connection refused' in /var/www/public/index.php:5
+Stack trace:
+#0 /var/www/public/index.php(5): MongoClient->__construct('mongodb://172.1...')
+#1 {main}
+  thrown in /var/www/public/index.php on line 5" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:03:38 [error] 28#0: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: 172.17.0.6:27017: Previous connection attempts failed, server blacklisted' in /var/www/public/index.php:5
+Stack trace:
+#0 /var/www/public/index.php(5): MongoClient->__construct('mongodb://172.1...')
+#1 {main}
+  thrown in /var/www/public/index.php on line 5" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:04:18 [error] 28#0: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: 172.17.0.6:27017: Connection refused' in /var/www/public/index.php:5
+Stack trace:
+#0 /var/www/public/index.php(5): MongoClient->__construct('mongodb://172.1...')
+#1 {main}
+  thrown in /var/www/public/index.php on line 5" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:05:25 [error] 28#0: *10 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: 172.17.0.6:27017: Connection refused' in /var/www/public/index.php:5
+Stack trace:
+#0 /var/www/public/index.php(5): MongoClient->__construct('mongodb://172.1...')
+#1 {main}
+  thrown in /var/www/public/index.php on line 5" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:05:45 [error] 28#0: *10 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: 172.17.0.6:27017: Connection refused' in /var/www/public/index.php:5
+Stack trace:
+#0 /var/www/public/index.php(5): MongoClient->__construct('mongodb://172.1...')
+#1 {main}
+  thrown in /var/www/public/index.php on line 5" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:30:29 [error] 32#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: 172.17.0.6:27017: Connection refused' in /var/www/public/index.php:5
+Stack trace:
+#0 /var/www/public/index.php(5): MongoClient->__construct('mongodb://172.1...')
+#1 {main}
+  thrown in /var/www/public/index.php on line 5" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:30:30 [error] 32#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: 172.17.0.6:27017: Connection refused' in /var/www/public/index.php:5
+Stack trace:
+#0 /var/www/public/index.php(5): MongoClient->__construct('mongodb://172.1...')
+#1 {main}
+  thrown in /var/www/public/index.php on line 5" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:31:57 [error] 32#0: *4 FastCGI sent in stderr: "PHP message: PHP Warning:  mysql_connect(): Can't connect to MySQL server on '172.17.0.2' (111) in /var/www/public/index.php on line 27" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:33:37 [error] 32#0: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  mysql_connect(): Can't connect to MySQL server on '172.17.0.3' (111) in /var/www/public/index.php on line 34" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:34:33 [error] 32#0: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  mysql_connect(): Can't connect to MySQL server on '172.17.0.3' (111) in /var/www/public/index.php on line 37" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:34:33 [error] 32#0: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  mysql_connect(): Can't connect to MySQL server on '172.17.0.3' (111) in /var/www/public/index.php on line 37" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:35:04 [error] 32#0: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  mysql_connect(): Can't connect to MySQL server on '172.17.0.3' (111) in /var/www/public/index.php on line 34" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:35:29 [error] 32#0: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  mysql_connect(): Can't connect to MySQL server on '172.17.0.3' (111) in /var/www/public/index.php on line 33" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:35:49 [error] 32#0: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  mysql_connect(): Can't connect to MySQL server on '172.17.0.4' (111) in /var/www/public/index.php on line 33" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:36:17 [error] 32#0: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  mysql_connect(): Can't connect to MySQL server on '172.17.0.3' (111) in /var/www/public/index.php on line 33" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:36:30 [error] 32#0: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  mysql_connect(): Can't connect to MySQL server on '172.17.0.5' (111) in /var/www/public/index.php on line 33" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:37:33 [error] 32#0: *6 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: user in /var/www/public/index.php on line 7
+PHP message: PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: localhost:27017: Connection refused' in /var/www/public/index.php:7
+Stack trace:
+#0 /var/www/public/index.php(7): MongoClient->__construct(NULL)
+#1 {main}
+  thrown in /var/www/public/index.php on line 7" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:38:40 [error] 32#0: *6 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: url in /var/www/public/index.php on line 10
+PHP message: PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: localhost:27017: Connection refused' in /var/www/public/index.php:10
+Stack trace:
+#0 /var/www/public/index.php(10): MongoClient->__construct(NULL)
+#1 {main}
+  thrown in /var/www/public/index.php on line 10" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:38:58 [error] 32#0: *6 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: url in /var/www/public/index.php on line 10
+PHP message: PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: localhost:27017: Connection refused' in /var/www/public/index.php:10
+Stack trace:
+#0 /var/www/public/index.php(10): MongoClient->__construct(NULL)
+#1 {main}
+  thrown in /var/www/public/index.php on line 10" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:39:02 [error] 32#0: *6 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: url in /var/www/public/index.php on line 7
+PHP message: PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: localhost:27017: Connection refused' in /var/www/public/index.php:7
+Stack trace:
+#0 /var/www/public/index.php(7): MongoClient->__construct(NULL)
+#1 {main}
+  thrown in /var/www/public/index.php on line 7" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:39:19 [error] 32#0: *6 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: url in /var/www/public/index.php on line 7
+PHP message: PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: localhost:27017: Connection refused' in /var/www/public/index.php:7
+Stack trace:
+#0 /var/www/public/index.php(7): MongoClient->__construct(NULL)
+#1 {main}
+  thrown in /var/www/public/index.php on line 7" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 01:39:24 [error] 32#0: *6 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: url in /var/www/public/index.php on line 7
+PHP message: PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: localhost:27017: Connection refused' in /var/www/public/index.php:7
+Stack trace:
+#0 /var/www/public/index.php(7): MongoClient->__construct(NULL)
+#1 {main}
+  thrown in /var/www/public/index.php on line 7" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"

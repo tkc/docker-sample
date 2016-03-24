@@ -1,97 +1,89 @@
-
 # PHP + NGINX Container #----------------------------------
-ov-laravel5:
-  restart: always
+laravel5:
   image: tkcdocker/laravel-mongo
-  container_name: ov-laravel5
+  container_name: laravel5
   ports:
     - "80:80"
   volumes:
     - ./settings/nginx:/etc/nginx/sites-available
-    - ./Code/laravel:/var/www
+    - ./Code/:/var/www
     - ./logs/nginx:/var/log/nginx
-    - ./logs/laravel:/var/www/storage/logs
   links:
-    - ov-mysql
-    - ov-mysqltesting
-    - ov-redis
-    - ov-mongo
+    - mysql
+    - mysqltesting
+    - redis
+    - mongo
   privileged: true
-  extra_hosts:
-    - "laravel.dev:xxx.xxx.xxx.xxx"
-
-# Mongo Container #----------------------------------------
-ov-mongo:
-  container_name: ov-mongo
-  image: mongo
-#  volumes:
-#    - ./data/mongo:/data/db
-#    - ./logs/mongo:/data/db
 
 # MySQL Container #----------------------------------------
-ov-mysql:
-  image: laradock/mysql:latest
-  container_name: ov-mysql
+mysql:
+  image: mysql:latest
+  container_name: mysql
   ports:
-    - "3309:3306"
-#  volumes_from:
-#    - ov-data
-#  volumes:
-#    - ./logs/mysql:/var/log/mysql
-  environment:
-    MYSQL_DATABASE: homestead
-    MYSQL_USER: homestead
-    MYSQL_PASSWORD: secret
-  privileged: true
-
-
-# MySQL Container #----------------------------------------
-ov-mysqltesting:
-#  restart: always
-  image: laradock/mysql:latest
-  container_name: ov-mysqltesting
-  ports:
-    - "3308:3306"
-#  volumes_from:
-#    - ov-data-test
-#  volumes:
-#    - ./logs/mysql-testing:/var/log/mysql
-  environment:
-    MYSQL_DATABASE: homestead
-    MYSQL_USER: homestead
-    MYSQL_PASSWORD: secret
-  privileged: true
-
-
-# Redis Container #----------------------------------------
-ov-redis:
-#  restart: always
-  image: laradock/redis:latest
-  container_name: ov-redis
-  ports:
-    - "6380:6379"
+    - "3306:3306"
 #  volumes_from:
 #    - data
-#  volumes:
-#    - ./logs/redis:/var/log/redis
+  volumes:
+    - ./logs/mysql:/var/log/mysql
+  environment:
+    MYSQL_ALLOW_EMPTY_PASSWORD: N
+    MYSQL_ROOT_PASSWORD: secret
+    MYSQL_DATABASE: homestead
+  privileged: true
+
+# MySQL Container #----------------------------------------
+mysqltesting:
+  image: laradock/mysql:latest
+  container_name: mysqltesting
+  ports:
+    - "3307:3306"
+#  volumes_from:
+#    - data
+  volumes:
+    - ./logs/mysql-testing:/var/log/mysql
+  environment:
+    MYSQL_ALLOW_EMPTY_PASSWORD: N
+    MYSQL_ROOT_PASSWORD: secret
+    MYSQL_DATABASE: homestead
+  privileged: true
+
+# MySQL Container #----------------------------------------
+mongo:
+  image: mongo:latest
+  container_name: mongo
+  ports:
+    - "27017:27017"
+  volumes:
+     - /logs/mongo:/data/db
+  environment:
+    MYSQL_ALLOW_EMPTY_PASSWORD: N
+    MYSQL_ROOT_PASSWORD: secret
+    MYSQL_DATABASE: homestead
+    MYSQL_USER: homestead
+    MYSQL_PASSWORD: secret
+  privileged: true
+
+# Redis Container #----------------------------------------
+redis:
+  image: laradock/redis:latest
+  container_name: redis
+  ports:
+    - "6379:6379"
+#  volumes_from:
+#    - data
+  volumes:
+    - ./logs/redis:/var/log/redis
   restart: always
   privileged: true
 
+
 # Data Volume Container #----------------------------------
-ov-data:
-#  restart: always
+data:
   image: laradock/data:latest
-  container_name: ov-data
+  container_name: data
   volumes:
     - /var/lib/mysql
     - /var/lib/redis
 
-# Data Volume Container #----------------------------------
-ov-data-test:
-  image: laradock/data:latest
-  container_name: ov-data-test
-  volumes:
-    - /var/lib/mysql
-    - /var/lib/redis
 
 
