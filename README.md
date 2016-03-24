@@ -24,6 +24,7 @@ https://www.docker.com/
 ## install docker machine
 
 Docker for Mac OS X
+
 https://docs.docker.com/
 
 
@@ -81,7 +82,6 @@ docker ps     //起動中
 docker ps -a  //all
 ```
 
-
 ## exec
 ```
 docker exec -ti <id / name > bash
@@ -92,6 +92,12 @@ docker exec -ti <id / name > bash
 docker syop <id>
 ```
 
+## rm
+
+```
+docker rm -f <id>
+docker rm -f $(docker ps -a -q) //よく使います。
+```
 
 ## commit & push
 ログインが必要
@@ -118,7 +124,7 @@ docker-compose rm
 env
 ```
 
-## ネットワーク例 php
+## ネットワークサンプル laravel
 ```
 echo env('MYSQL_PORT_3306_TCP_ADDR')
 ```
@@ -127,7 +133,3 @@ echo env('MYSQL_PORT_3306_TCP_ADDR')
 https://hub.docker.com/
 
 
-よく使うコマンド
-```
-docker rm -f $(docker ps -a -q)
-```
