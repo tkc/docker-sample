@@ -43,7 +43,7 @@ chrootとは、UNIXオペレーティングシステムにおいて、
 Dockerなら親のOSイメージを共有する為に1つ分の1GBで済む。
 ```
 
-## Dockerfile sample
+## Dockerfile
 
 
 ````
@@ -51,7 +51,7 @@ docker build -t docker-file .
 docker images
 ````
 
-## docker pull sample
+## docker pull
 ````
 docker pull reinblau/lamp
 docker images
