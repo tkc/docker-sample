@@ -192,6 +192,7 @@ mysql -u homestead -p -h $MYSQL_PORT_3306_TCP_ADDR --port 3306
 ```
 
 Data Volume
+
 ``
 Data Volume を作成したコンテナを削除(docker rm <container>)すると、
 メタデータが消えて Data Volume への参照は失われますが、Data Volume の実体は削除されないようです。
@@ -201,6 +202,7 @@ Data Volume を作成したコンテナを削除(docker rm <container>)すると
 ``
 
 Docker の Data Volume まわりを整理する
+
 http://qiita.com/lciel/items/e21a4ede3bac7fb3ec5a
 
 
