@@ -84,7 +84,7 @@ docker ps -a  //all
 
 ## exec
 ```
-docker exec -ti <id / name > bash
+docker exec -ti <id or name > bash
 ```
 
 ## stop

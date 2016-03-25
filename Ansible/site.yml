@@ -1,0 +1,12 @@
+- hosts: docker_hosts
+  become: yes
+  remote_user: docker
+  tasks:
+    - name: deploy centos container
+
+- hosts: docker_hosts
+  become: yes
+  remote_user: docker
+  tasks:
+    - name: deploy centos container
+      docker: image=centos:centos6 name=web01 ports=80:80 expose=80 tty=yes

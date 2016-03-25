@@ -190,3 +190,23 @@ bash
 ```
 mysql -u homestead -p -h $MYSQL_PORT_3306_TCP_ADDR --port 3306
 ```
+
+Data Volume
+``
+Data Volume を作成したコンテナを削除(docker rm <container>)すると、
+メタデータが消えて Data Volume への参照は失われますが、Data Volume の実体は削除されないようです。
+どこかのタイミングで Docker によってクリアされるのかもしれませんが、今の所消えるところを確認できていません。
+実運用においては、頻繁に Data Volume を作ることは通常ないと思われますが、
+開発環境で実験をしたりしていると大量のゴミが溜まっていきます。
+``
+
+Docker の Data Volume まわりを整理する
+http://qiita.com/lciel/items/e21a4ede3bac7fb3ec5a
+
+
+その他参考
+
+OSXでdockerを使いたいだけならVagrantを捨て
+dinghyを使ってみるといいかもしれない
+
+http://qiita.com/suin/items/c2ef8ff06b844be656cc?utm_content=bufferffdce&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer

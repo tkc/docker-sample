@@ -354,3 +354,38 @@ Stack trace:
 #0 /var/www/public/index.php(7): MongoClient->__construct(NULL)
 #1 {main}
   thrown in /var/www/public/index.php on line 7" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 18:56:17 [error] 28#0: *6 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'Redis' not found in /var/www/public/index.php on line 6" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:03:39 [error] 29#0: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function apache_getenv() in /var/www/public/index.php on line 6" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:04:01 [error] 29#0: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function apache_getenv() in /var/www/public/index.php on line 6" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:06:11 [error] 29#0: *9 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: MYSQL_PORT_3306_TCP_ADDR in /var/www/public/index.php on line 6" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:06:20 [error] 29#0: *9 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: MYSQLTESTING_NAME in /var/www/public/index.php on line 6" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:06:33 [error] 29#0: *9 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: MYSQL_NAME in /var/www/public/index.php on line 6" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:13:28 [notice] 65#0: signal process started
+2016/03/24 19:13:35 [emerg] 72#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/03/24 19:13:35 [emerg] 72#0: bind() to [::]:80 failed (98: Address already in use)
+2016/03/24 19:13:35 [emerg] 72#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/03/24 19:13:35 [emerg] 72#0: bind() to [::]:80 failed (98: Address already in use)
+2016/03/24 19:13:35 [emerg] 72#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/03/24 19:13:35 [emerg] 72#0: bind() to [::]:80 failed (98: Address already in use)
+2016/03/24 19:13:35 [emerg] 72#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/03/24 19:13:35 [emerg] 72#0: bind() to [::]:80 failed (98: Address already in use)
+2016/03/24 19:13:35 [emerg] 72#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/03/24 19:13:35 [emerg] 72#0: bind() to [::]:80 failed (98: Address already in use)
+2016/03/24 19:13:35 [emerg] 72#0: still could not bind()
+2016/03/24 19:13:41 [notice] 73#0: signal process started
+2016/03/24 19:13:55 [error] 77#0: *1 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: MYSQL_NAME in /var/www/public/index.php on line 9" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:14:03 [error] 77#0: *1 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: MYSQL_NAME in /var/www/public/index.php on line 7" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:14:03 [error] 77#0: *1 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: MYSQL_NAME in /var/www/public/index.php on line 7" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:14:16 [notice] 79#0: signal process started
+2016/03/24 19:14:21 [error] 85#0: *1 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: MYSQL_NAME in /var/www/public/index.php on line 7" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:14:30 [notice] 86#0: signal process started
+2016/03/24 19:14:34 [error] 92#0: *1 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: MYSQL_NAME in /var/www/public/index.php on line 7" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:14:39 [notice] 93#0: signal process started
+2016/03/24 19:14:43 [error] 92#0: *2 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: MYSQL_NAME in /var/www/public/index.php on line 7" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:14:43 [error] 97#0: *4 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: MYSQL_NAME in /var/www/public/index.php on line 7" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:14:55 [error] 97#0: *4 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: MYSQL_NAME in /var/www/public/index.php on line 6" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:14:55 [error] 97#0: *4 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: MYSQL_NAME in /var/www/public/index.php on line 6" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:17:10 [error] 97#0: *11 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: MYSQL_NAME in /var/www/public/index.php on line 6" while reading response header from upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:21:07 [error] 97#0: *14 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: MYSQL_NAME in /var/www/public/index.php on line 6" while reading upstream, client: 192.168.99.1, server: laravel.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "192.168.99.100"
+2016/03/24 19:26:11 [notice] 108#0: signal process started
+2016/03/24 19:26:16 [notice] 113#0: signal process started

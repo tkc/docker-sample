@@ -1,60 +1,83 @@
-# PHP + NGINX Container #----------------------------------
 laravel5:
+#  build: ./docker-file/.
   image: tkcdocker/laravel-mongo
   container_name: laravel5
   ports:
     - "80:80"
   volumes:
     - ./settings/nginx:/etc/nginx/sites-available
-    - ./Code/:/var/www
     - ./logs/nginx:/var/log/nginx
+    - ./Code/:/var/www
   links:
+#    - redis
+    - mongo
     - mysql
     - mysqltesting
-    - redis
+#  extra_hosts: ///etc/hosts追加
+#    - "somehost:162.242.195.82"
+  privileged: true #特権モード
+
+web1:
+  image: tkcdocker/laravel-mongo
+  container_name: web1
+  ports:
+    - "8001:80"
+  links:
     - mongo
+    - mysql
+    - mysqltesting
   privileged: true
 
-# MySQL Container #----------------------------------------
+web2:
+  image: tkcdocker/laravel-mongo
+  container_name: web2
+  ports:
+    - "8002:80"
+  links:
+    - mongo
+    - mysql
+    - mysqltesting
+  privileged: true
+
 mysql:
   image: mysql:latest
   container_name: mysql
   ports:
     - "3306:3306"
-#  volumes_from:
-#    - data
-  volumes:
-    - ./logs/mysql:/var/log/mysql
+  volumes_from:
+    - data-mysql
+#  volumes:
+#    - ./logs/mysql:/var/log/mysql
   environment:
     MYSQL_ALLOW_EMPTY_PASSWORD: N
     MYSQL_ROOT_PASSWORD: secret
     MYSQL_DATABASE: homestead
   privileged: true
 
-# MySQL Container #----------------------------------------
 mysqltesting:
   image: laradock/mysql:latest
   container_name: mysqltesting
   ports:
     - "3307:3306"
-#  volumes_from:
-#    - data
-  volumes:
-    - ./logs/mysql-testing:/var/log/mysql
+  volumes_from:
+    - data-mysql-testing
+#  volumes:
+#    - ./logs/mysql-testing:/var/log/mysql
   environment:
     MYSQL_ALLOW_EMPTY_PASSWORD: N
     MYSQL_ROOT_PASSWORD: secret
     MYSQL_DATABASE: homestead
   privileged: true
 
-# MySQL Container #----------------------------------------
 mongo:
   image: mongo:latest
   container_name: mongo
   ports:
     - "27017:27017"
-  volumes:
-     - /logs/mongo:/data/db
+  volumes_from:
+    - data-mongo
+#  volumes:
+#     - /logs/mongo:/data/db
   environment:
     MYSQL_ALLOW_EMPTY_PASSWORD: N
     MYSQL_ROOT_PASSWORD: secret
@@ -63,27 +86,38 @@ mongo:
     MYSQL_PASSWORD: secret
   privileged: true
 
-# Redis Container #----------------------------------------
 redis:
   image: laradock/redis:latest
   container_name: redis
   ports:
     - "6379:6379"
-#  volumes_from:
-#    - data
+  volumes_from:
+    - data-redis
   volumes:
     - ./logs/redis:/var/log/redis
   restart: always
   privileged: true
 
-
-# Data Volume Container #----------------------------------
-data:
-  image: laradock/data:latest
-  container_name: data
+data-mysql:
+  image: busybox
+  container_name: data-mysql
   volumes:
     - /var/lib/mysql
-    - /var/lib/redis
 
+data-mysql-testing:
+  image: busybox
+  container_name: data-mysql-testing
+  volumes:
+    - /var/lib/mysql
 
+data-redis:
+  image: busybox
+  container_name: data-redis
+  volumes:
+    - /var/lib/mysql
 
+data-mongo:
+  image: busybox
+  container_name: data-mongo
+  volumes:
+    - /data/db
