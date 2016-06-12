@@ -1,12 +1,72 @@
 
 # Cheat Sheet
 
+```
+docker save IMAGE > filename.tar
+docker load < filename.tar
+
+```
+
+docker-machineの切替 defaultへ切り替える
+
+```
+
+docker-machine ls
+
+docker-machine env default
+
+export DOCKER_TLS_VERIFY="1"
+export DOCKER_HOST="tcp://192.168.99.100:2376"
+export DOCKER_CERT_PATH="/Users/tkc/.docker/machine/machines/default"
+export DOCKER_MACHINE_NAME="default"
+
+または
+eval $(docker-machine env default)
+```
+
+conf
+```
+docker exec -it name env
+docker exec name ./artisan route:list
+```
+
+```
+docker-machine create --driver virtualbox --url=tcp://192.168.99:2376 custombox
+docker-machine create --driver virtualbox custombox
+docker-machine create --driver virtualbox --virtualbox-hostonly-cidr "172.30.0.102/24" ip
+docker-machine create --driver virtualbox --virtualbox-hostonly-cidr "192.168.59.3/24" dev
+```
+
+ipの設定に関して、
+https://github.com/docker/machine/issues/1709
+
+192.168.98.100
+```
+docker-machine create -d virtualbox --virtualbox-hostonly-cidr "192.168.98.1/24" m98
+```
+192.168.97.100
+```
+docker-machine create -d virtualbox --virtualbox-hostonly-cidr "192.168.97.1/24" m97
+```
+192.168.96.100
+```
+docker-machine create -d virtualbox --virtualbox-hostonly-cidr "192.168.96.1/24" m96
+```
+
+```
+docker-machine active
+```
+
+```
+docker-machine stop default
+docker-machine start default
+```
+
 run sample
 ```
 docker run -p 80:80 -d eboraas/laravel
 docker run -p 8091:80 -v /Users/tkc/Desktop/test/:/var/www/laravel -d eboraas/laravel
 ```
-
 https://docs.docker.com/engine/reference/commandline/run/
 
 

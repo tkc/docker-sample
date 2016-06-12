@@ -1,9 +1,10 @@
 laravel5:
 #  build: ./docker-file/.
-  image: tkcdocker/laravel-mongo
+  image: tkcdocker/laravel-mongo-0325
   container_name: laravel5
   ports:
     - "80:80"
+    - "8081:8081"
   volumes:
     - ./settings/nginx:/etc/nginx/sites-available
     - ./logs/nginx:/var/log/nginx
@@ -59,8 +60,8 @@ mysqltesting:
   container_name: mysqltesting
   ports:
     - "3307:3306"
-  volumes_from:
-    - data-mysql-testing
+#  volumes_from:
+#    - data-mysql-testing
 #  volumes:
 #    - ./logs/mysql-testing:/var/log/mysql
   environment:
@@ -93,8 +94,8 @@ redis:
     - "6379:6379"
   volumes_from:
     - data-redis
-  volumes:
-    - ./logs/redis:/var/log/redis
+#  volumes:
+#    - ./logs/redis:/var/log/redis
   restart: always
   privileged: true
 
