@@ -18,7 +18,7 @@ https://www.docker.com/
 
 
 # 概要
-(pull or build) > image > (run) > contena > (update)  > (stop) > (commit) > (push) > (pull) > image  ....
+( pull or build ) > image > ( run ) > contena > ( update )  > ( stop ) > ( commit ) > ( push ) > ( pull ) > image  ....
 
 
 ## install docker machine
@@ -28,23 +28,7 @@ Docker for Mac OS X
 https://docs.docker.com/
 
 
-## コンテナとは？
-
-```
-コンテナとはハイレベルから見ると軽量VMにみえます。
-プロセスが隔離されているしネットワークも独自に振られていて、
-リソースも分離されているしrootとして実行する。
-
-chrootに近い、
-chrootとは、UNIXオペレーティングシステムにおいて、
-現在のプロセスとその子プロセス群に対してルートディレクトリを変更する操作である。
-例えば1GBのOSを10個動かそうとすれば、
-仮想マシンではディスクスペースはOSが10個分で10GBを使いますが、
-Dockerなら親のOSイメージを共有する為に1つ分の1GBで済む。
-```
-
 ## Dockerfile
-
 
 ````
 docker build -t docker-file .
@@ -115,6 +99,7 @@ docker pull <image namge>
 ```
 # up
 docker-compose up -d
+
 # rm
 docker-compose rm
 ```
@@ -124,7 +109,7 @@ docker-compose rm
 env
 ```
 
-## ネットワークサンプル laravel
+## ネットワークサンプル
 ```
 echo env('MYSQL_PORT_3306_TCP_ADDR')
 ```
@@ -138,3 +123,30 @@ mysql -u root -p -h $MYSQLTESTING_PORT_3306_TCP_ADDR --port 3306
 https://hub.docker.com/
 
 
+# docker-machineの操作
+
+ipを指定してdocker machineを作成する。
+
+```
+docker-machine create -d virtualbox --virtualbox-hostonly-cidr "192.168.98.1/24" test-machine
+docker-machine ip test-machine
+#192.168.98.100
+```
+
+```
+docker-machine create -d virtualbox --virtualbox-hostonly-cidr "192.168.97.1/24" test-machine
+docker-machine ip test-machine
+#192.168.97.100
+```
+
+machineの切替
+
+```
+docker-machine ls
+eval "$(docker-machine env test-machine)"
+```
+
+```
+設定ファイルの確認
+~/.docker/machine/machines/test-machine
+```

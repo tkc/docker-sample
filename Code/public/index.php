@@ -2,7 +2,10 @@
 
 <?php
 
-//echo $_ENV['MYSQL_NAME'];
+//echo $_ENV['MONGO_PORT_27017_TCP_ADDR'];
+
+$ip = $_ENV['MONGO_PORT_27017_TCP_ADDR'];
+
 
 $urlMongo = "mongodb://172.17.0.2:27017";
 $urlMysql = "172.17.0.4:3306";
