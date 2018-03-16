@@ -1,6 +1,6 @@
 
 
-# docker training
+# Docker Training
 
 
                         ##         .
@@ -13,140 +13,161 @@
               \____\_______/
 
 
-## docker
+### Site
+
 https://www.docker.com/
 
+### Hub
 
-# 概要
-( pull or build ) > image > ( run ) > contena > ( update )  > ( stop ) > ( commit ) > ( push ) > ( pull ) > image  ....
+https://hub.docker.com/
 
+### Life Cycle
 
-## install docker machine
+```
+# run
+docker run -itd -p 8001:80 -p 2222:22 --name web01 <name>
 
-Docker for Mac OS X
+# start
+docker start web01
 
-https://docs.docker.com/
+# stop
+docker stop web01
 
+# restart
+docker restart web01
 
-## Dockerfile
+# remove
+docker rm web01
 
-````
+```
+
+### Use Dockerfile
+```
 docker build -t docker-file .
-docker images
+```
+
+### Pull Images
+```
+docker pull <name>
 ````
 
-## docker pull
-````
-docker pull reinblau/lamp
-docker images
-````
-
-## images
+### Show Images
 ```
 docker images
 ```
 
-## run
+### Run Sample
 ```
 docker run -it -h ubuntu_host reinblau/lamp /bin/bash
 docker run --name web1 -p 8001:80 -d reinblau/lamp
 docker run --name web2 -p 8002:80 -d reinblau/lamp
 docker run --name web3 -p 8003:80 -d reinblau/lamp
 ```
-
-## IP
+ 
+### Ps
 ```
-// docker-machine ip <machine name>
-docker-machine ip default
-```
-
-## ps
-```
-docker ps     //起動中
-docker ps -a  //all
+docker ps
+docker ps -a
 ```
 
-## exec
+### Exec
 ```
-docker exec -ti <id or name > bash
-```
-
-## stop
-```
-docker syop <id>
+docker exec -ti <name> bash
 ```
 
-## rm
+### Stop
+```
+docker stop <id>
+```
+
+### Rm
 
 ```
 docker rm -f <id>
-docker rm -f $(docker ps -a -q) //よく使います。
 ```
 
-## commit & push
-ログインが必要
-```
-docker commit <name  or id > <user-name/new-image-name>
-```
-
-## pull
+### Pull
 ```
 docker pull <image namge>
 ```
 
-## Docker Compose
+### Compose Up
 
 ```
-# up
 docker-compose up -d
+```
 
-# rm
+### Compose Rm
+```
 docker-compose rm
 ```
 
-## env
-```
-env
-```
-
-## ネットワークサンプル
+### Show Env Value
 ```
 echo env('MYSQL_PORT_3306_TCP_ADDR')
 ```
 
+### Use Env 
 ```
-docker exec -ti laravel5 bash
+docker exec -ti <name> bash
 mysql -u root -p -h $MYSQLTESTING_PORT_3306_TCP_ADDR --port 3306
 ```
 
-## Docker HUB
-https://hub.docker.com/
-
-
-# docker-machineの操作
-
-ipを指定してdocker machineを作成する。
+### Machine
 
 ```
 docker-machine create -d virtualbox --virtualbox-hostonly-cidr "192.168.98.1/24" test-machine
-docker-machine ip test-machine
-#192.168.98.100
 ```
 
+### Machine IP
 ```
-docker-machine create -d virtualbox --virtualbox-hostonly-cidr "192.168.97.1/24" test-machine
-docker-machine ip test-machine
-#192.168.97.100
+docker-machine ip <machine name>
 ```
 
-machineの切替
+### Change Machine
 
 ```
 docker-machine ls
 eval "$(docker-machine env test-machine)"
 ```
 
+### Kill all containers
 ```
-設定ファイルの確認
-~/.docker/machine/machines/test-machine
+docker kill $(docker ps -q)
+```
+
+### Remove all containers
+```
+docker rm $(docker ps -a -q)
+```
+
+### Remove all networks
+```
+docker network rm $(docker network ls | grep "bridge" | awk '/ / { print $1 }')
+```
+
+### Run Example
+
+```
+docker run -it -h ubuntu_host ubuntu:14.04 /bin/bash
+```
+
+```
+docker run -it -m 512m --rm ubuntu:14.04 /bin/bash
+```
+
+```
+docker run -d --name redis dockerfile/redis
+```
+
+```
+docker run -d -p 6379:6379 -v /data/redis:/data --name redis dockerfile/redis
+```
+
+##  MySQL Example
+
+```
+docker pull mysql
+docker run --name mysqld -e MYSQL_ROOT_PASSWORD=secret -d mysql
+docker run -p 80:80 -d eboraas/laravel --link mysqld:mysql -it --rm mysql bash
 ```

@@ -21,5 +21,3 @@ mysql:
     MYSQL_DATABASE: homestead
   privileged: true
 
-# Docker Connection Plugin
-# http://dev.classmethod.jp/server-side/os/ansible-docker-connection-plugin/

@@ -1,6 +1,5 @@
 laravel5:
-#  build: ./docker-file/.
-  image: tkcdocker/laravel-mongo-0325
+  build: .
   container_name: laravel5
   ports:
     - "80:80"
@@ -10,12 +9,9 @@ laravel5:
     - ./logs/nginx:/var/log/nginx
     - ./Code/:/var/www
   links:
-#    - redis
     - mongo
     - mysql
     - mysqltesting
-#  extra_hosts: ///etc/hosts追加
-#    - "somehost:162.242.195.82"
   privileged: true #特権モード
 
 web1:
@@ -47,8 +43,6 @@ mysql:
     - "3306:3306"
   volumes_from:
     - data-mysql
-#  volumes:
-#    - ./logs/mysql:/var/log/mysql
   environment:
     MYSQL_ALLOW_EMPTY_PASSWORD: N
     MYSQL_ROOT_PASSWORD: secret
@@ -58,12 +52,6 @@ mysql:
 mysqltesting:
   image: laradock/mysql:latest
   container_name: mysqltesting
-  ports:
-    - "3307:3306"
-#  volumes_from:
-#    - data-mysql-testing
-#  volumes:
-#    - ./logs/mysql-testing:/var/log/mysql
   environment:
     MYSQL_ALLOW_EMPTY_PASSWORD: N
     MYSQL_ROOT_PASSWORD: secret
@@ -77,8 +65,6 @@ mongo:
     - "27017:27017"
   volumes_from:
     - data-mongo
-#  volumes:
-#     - /logs/mongo:/data/db
   environment:
     MYSQL_ALLOW_EMPTY_PASSWORD: N
     MYSQL_ROOT_PASSWORD: secret
@@ -94,8 +80,6 @@ redis:
     - "6379:6379"
   volumes_from:
     - data-redis
-#  volumes:
-#    - ./logs/redis:/var/log/redis
   restart: always
   privileged: true
 

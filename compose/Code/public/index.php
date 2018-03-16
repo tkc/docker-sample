@@ -2,10 +2,7 @@
 
 <?php
 
-//echo $_ENV['MONGO_PORT_27017_TCP_ADDR'];
-
 $ip = $_ENV['MONGO_PORT_27017_TCP_ADDR'];
-
 
 $urlMongo = "mongodb://172.17.0.2:27017";
 $urlMysql = "172.17.0.4:3306";
@@ -43,8 +40,3 @@ mysql_close($link) or die("dinny end link");
 echo '<h2>Mysql testting OK</h2>';
 
 
-/*
-TDOO
-Setting $_ENV (fka $HTTP_ENV_VARS) with nginx/php-fpm
-http://stackoverflow.com/questions/8551592/setting-env-fka-http-env-vars-with-nginx-php-fpm
-*/
