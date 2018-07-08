@@ -54,7 +54,7 @@ docker rm <id/name>
 
 ###  Remove Image
 ```
-docker rmi 16aaebcee7eb
+docker rmi <id/name
 ```
 
 ### Compose Up
